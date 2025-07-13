@@ -33,7 +33,7 @@ with mic as source:
     audio = listener.listen(source)
 
 try:
-    text = listener.recognize_google(audio, language='es-ES')
+    text = listener.recognize_google(audio)
     print(f'Has dicho: {text}')
     speak(text)
 
